@@ -1,6 +1,6 @@
 ## My portafolio web
 
-- Exercises on front end.
+- My exercises to project myself as a s fullstack developer.
 
 
 ## url
