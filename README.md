@@ -1,6 +1,6 @@
 ## My portafolio web
 
-- My exercises to project myself as a s fullstack developer.
+- My exercises to project myself as a fullstack developer.
 
 
 ## url
