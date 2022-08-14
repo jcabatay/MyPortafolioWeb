@@ -3,27 +3,138 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="./css/index.css" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
     <title>Index</title>
+
+    <style>	
+      h2{
+        color: blue;
+      }
+      
+      .html-elements{			
+        color: blue;
+        font-size: 16px;
+        /* google font: Cairo */						
+        font-family: Cairo, monospace; 
+        text-align: justify;
+        border-width: 1px;			
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;			
+        width: 500px;
+        border-radius: 5px;
+      }
+      
+      .smaller-image{
+        width: 80px;		
+      }
+      
+      .thick-green-border{
+        border-color: white;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+      
+      .body-background{
+        background-color: lightcyan;
+      }
+      
+      #cat-photo-element{
+        /* applying to an id of elements */
+        background-color: red;
+      }
+      
+      .logo-cat{
+        border-style: solid;
+        border-color: black;
+        text-align: justify;
+        border-width: 1px;			
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;			
+        width: 300px;
+        border-radius: 5px;
+      }
+      
+      
+      /* Clockwise notation: nmemotecnica trbl (trouble) */
+      .things-love-cats{			
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        text-align: justify;			
+        padding: 10px 20px 10px 20px;
+        margin-top: 5px;
+        padding: 10px;
+        
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 5px;
+      }
+
+      .full-card{
+        padding: 10px 10px 10px 10px; /* */
+        margin: 10px 10px 10px 10px;
+        align-self: center;
+        border-style: solid;
+        border-width: 1px;
+        width: 600px;
+        
+      }
+      
+      
+      #thumbnail{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+    </style>
+
   </head>
   <body>
 
+
     <div class="container mt-5">
         <h1>Index</h1>
-        <h6>Under construction 10/06/2022</h6>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="japan.html">Japan</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./japan-cards.html">Japan Cards</a>
-            </li>
-        </ul>
+        <h6>Under construction. Updated 14/08/2022</h6>
+   
+    </div>
 
+   
+    <div class="container mt-5">
+      <div class="row">
+        
+        <div class="col-4"> 
+          <div class="col-4 logo-cat" id="thumbnail">		
+            <h2><a class="nav-link" href="./japan.html"> Japan </a></h2>                  
+                <img class="smaller-image thick-green-border" src="images/bootstrap.png" alt="bootstrap">
+                <img class="smaller-image thick-green-border" src="images/html5.png" alt="html5">
+                <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
+              
+          </div>  
+        </div>
+
+        <div class="col-4">
+          <div class="col-4 logo-cat" id="thumbnail">		
+            <h2><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></h2>                      
+              <img class="smaller-image thick-green-border" src="images/bootstrap.png" alt="A cute orange cat lying on its back.">
+              <img class="smaller-image thick-green-border" src="images/html5.png" alt="html5">
+              <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
+          </div>             
+
+        </div>
+
+        
+
+      </div>
 
     </div>
+
+      
+    
 
   </body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "scripts":{
+  "build": "purgecss --css css/japan-cards.css --content japan-cards.html -o css/reducido-japan-cards.css"
+},
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

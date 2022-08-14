@@ -169,15 +169,13 @@
 	font-size: 12px;
 }
 
-
-
 .foot-text{
 	font-family: 'Courier New' Courier, monospace;
 	text-align: center;
 	color: #f69570;
 	font-family: Tahoma, Verdana, sans-serif;
 	font-size: 15px;
-	background-color: #cccccc;
+	background-color: #ffffff;
 	padding: 5px 5px 5px 5px;
 	margin: 5px 5px 5px 5px;
 }
@@ -189,3 +187,5 @@
 	bottom: 20px;
 
 }
+
+
