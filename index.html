@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="./css/index.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
-    <title>Index</title>
+    <!-- <link href="./css/index-responsive.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <title>Home</title>
 
     <style>	
-      h2{
-        color: blue;
-      }
-      
+
       .html-elements{			
         color: blue;
         font-size: 16px;
@@ -39,16 +37,7 @@
         border-radius: 50%;
       }
       
-      .body-background{
-        background-color: lightcyan;
-      }
-      
-      #cat-photo-element{
-        /* applying to an id of elements */
-        background-color: red;
-      }
-      
-      .logo-cat{
+      .logo-card{
         border-style: solid;
         border-color: black;
         text-align: justify;
@@ -59,32 +48,7 @@
         padding-left: 20px;			
         width: 300px;
         border-radius: 5px;
-      }
-      
-      
-      /* Clockwise notation: nmemotecnica trbl (trouble) */
-      .things-love-cats{			
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-        text-align: justify;			
-        padding: 10px 20px 10px 20px;
-        margin-top: 5px;
-        padding: 10px;
-        
-        font-weight: bold;
-        font-style: italic;
-        border-radius: 5px;
-      }
-
-      .full-card{
-        padding: 10px 10px 10px 10px; /* */
-        margin: 10px 10px 10px 10px;
-        align-self: center;
-        border-style: solid;
-        border-width: 1px;
-        width: 600px;
-        
+        height: 160px;;
       }
       
       
@@ -94,47 +58,109 @@
     </style>
 
   </head>
-  <body>
+  <body class="p-3 m-0 border-0 ">
 
+    <nav class="navbar bg-light fixed-top">
+      <div class="container ">
+        <a class="navbar-brand" href="#">&nbsp;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h12 class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 22/08/2022</h12>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
 
-    <div class="container mt-5">
-        <h1>Index</h1>
-        <h6>Under construction. Updated 14/08/2022</h6>
-   
-    </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Frontend
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Japan</a></li>
+                  <li><a class="dropdown-item" href="#">Japan-cards</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
 
-   
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Backend
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Under construction</a></li>
+                </ul>
+
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- prestentation -->
     <div class="container mt-5">
       <div class="row">
-        
-        <div class="col-4"> 
-          <div class="col-12 logo-cat" id="thumbnail">		
+        <div class="col-12">
+          <h6>
+            <p class="nav-link">
+              Joel Cabatay Supleo<br>
+              Backend Developer Java
+            </p>
+            
+          </h6>
+        </div>        
+      </div>
+    </div>
+   
+    <div class="container mt-2">
+      <div class="row">        
+        <div class="col-sm-4 pb-2"> 
+          <div class="logo-card" id="thumbnail">		
             <h2><a class="nav-link" href="./japan.html"> Japan </a></h2>                  
-                <img class="smaller-image thick-green-border" src="images/bootstrap.png" alt="bootstrap">
-                <img class="smaller-image thick-green-border" src="images/html5.png" alt="html5">
-                <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
-              
+                <img class="smaller-image" src="images/bootstrap.png" alt="bootstrap">
+                <img class="smaller-image" src="images/html5.png" alt="html5">
+                <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">              
           </div>  
         </div>
 
-        <div class="col-4">
-          <div class="col-12 logo-cat" id="thumbnail">		
+        <div class="col-sm-4 pb-2"> 
+          <div class="logo-card" id="thumbnail">		
             <h2><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></h2>                      
+              <img class="smaller-image" src="images/bootstrap.png" alt="A cute orange cat lying on its back.">
+              <img class="smaller-image" src="images/html5.png" alt="html5">
+              <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
+          </div>             
+        </div>
+
+        <div class="col-sm-4 pb-2"> 
+          <div class="logo-card" id="thumbnail">		
+            <h2><a class="nav-link" href="#"> ToDo..</a></h2>       
+            <!-- 
               <img class="smaller-image thick-green-border" src="images/bootstrap.png" alt="A cute orange cat lying on its back.">
               <img class="smaller-image thick-green-border" src="images/html5.png" alt="html5">
               <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
+              -->               
           </div>             
-
         </div>
-
-        
-
       </div>
 
     </div>
-
-      
-    
 
   </body>
 </html>
