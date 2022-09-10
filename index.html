@@ -31,6 +31,11 @@
         width: 80px;		
       }
       
+      .index-image{        
+        width: 260px;		
+        height: 138px;        
+      }
+
       .thick-green-border{
         border-color: white;
         border-width: 3px;
@@ -38,24 +43,47 @@
         border-radius: 50%;
       }
       
-      .logo-card{
-        border-style: solid;
-        border-color: black;
-        text-align: justify;
-        border-width: 1px;			
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-left: 20px;			
-        width: 300px;
-        border-radius: 5px;
-        height: 160px;;
+      .card {
+        border: 0;
+        border-radius: 0;
+        color: #fff;
+        /* height: 55vw;*/
+        object-fit: contain;
+        box-shadow: 5px 5px 10px #e1e1e1;
+        padding: 2em 0;
+        border-bottom-right-radius: 4em;
+        border-top-left-radius: 4em;
+        /* background: linear-gradient(to left, teal 50%, #26282b 50%); */
+        /* background-size: 200%; */
+        /* background-position: right; */
+        transition: background-position 0.5s ease-out;
       }
-      
-      
+           
       #thumbnail{
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
+
+       /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        .card {
+        height: 77vw;
+        }
+      }
+      
+        /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+      .card {
+        height: 44vw;
+       }
+      }
+  
+        /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        .card {
+        height: 55vw;
+        }
+      }
+
     </style>
 
   </head>
@@ -69,7 +97,7 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h12 class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 22/08/2022</h12>
+            <h12 class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 09/09/2022</h12>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -114,7 +142,7 @@
       </div>
     </nav>
 
-    <!-- prestentation -->
+    <!-- presentation -->
     <div class="container mt-5">
       <div class="row">
         <div class="col-12">
@@ -129,39 +157,76 @@
       </div>
     </div>
    
+    
     <div class="container mt-2">
-      <div class="row">        
-        <div class="col-sm-4 pb-2"> 
-          <div class="logo-card" id="thumbnail">		
-            <h2><a class="nav-link" href="./japan.html"> Japan </a></h2>                  
-                <img class="smaller-image" src="images/bootstrap.png" alt="bootstrap">
-                <img class="smaller-image" src="images/html5.png" alt="html5">
-                <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">              
-          </div>  
+      <div class="row">    
+
+        <div class="col-sm-4 col-mb-6 pb-2"> 
+          <div class="card" id="thumbnail">		
+            <h3><a class="nav-link" href="./japan.html"> Japan </a></h3>                  
+              <img class="card-img-top rounded mx-auto" src="images/japan-index-300x138.png" alt="Frontend exercises.">
+          
+            <div class="card-body">
+              <h6 class="card-title text-primary">Description</h6>
+              <p class="card-text fs-7 fw-ligt text-body">My first exercise during my introduction to Bootstrap</p>
+              <h6 class="card-title text-primary">Skills</h6>              
+              <p class="card-text fs-7 fw-ligt text-body">Bootstrap - Flexbox - Html5 </p>
+                <!-- 
+                <ul class="list-group list-group-flush">              
+                  <li class="list-group-item"><h6>Bootstrap</h6></li>            
+                  <li class="list-group-item"><h6>Flexbox</h6></li>            
+                  <li class="list-group-item"><h6>Html5</h6></li>                          
+                </ul>
+                -->
+                <!--
+                <p class="text-muted">
+                  <a href="#" class="card-link text-reset">See code</a>            
+                </p>
+              -->
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-reset">See code</a></small>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm-4 pb-2"> 
-          <div class="logo-card" id="thumbnail">		
-            <h2><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></h2>                      
-              <img class="smaller-image" src="images/bootstrap.png" alt="A cute orange cat lying on its back.">
-              <img class="smaller-image" src="images/html5.png" alt="html5">
-              <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
+        <div class="col-sm-4 col-mb-6 pb-2"> 
+          <div class="card" id="thumbnail">		
+            <h3><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></h3>                      
+            <img class="card-img-top rounded mx-auto" src="images/japan-cards-300x138.png" alt="Frontend exercises.">
+
+            <div class="card-body">
+              <h6 class="card-title text-primary">Description</h6>
+              <p class="card-text fs-7 fw-ligt text-body">Keep on working with cards. Following a tutorial in youtube.</p>
+              <h6 class="card-title text-primary">Skills</h6>
+              <p class="card-text fs-7 fw-ligt text-body">Bootstrap - Flexbox - Html5 - Sass</p>
+              <!-- 
+                <ul class="list-group list-group-flush">              
+                  <li class="list-group-item"><h6>Bootstrap</h6></li>            
+                  <li class="list-group-item"><h6>Flexbox</h6></li>            
+                  <li class="list-group-item"><h6>Html5</h6></li>                          
+                  <li class="list-group-item"><h6>Sass</h6></li>                          
+                </ul>                
+                -->
+            </div> 
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-reset">See code</a></small>
+            </div>
+              
           </div>             
         </div>
 
-        <div class="col-sm-4 pb-2"> 
-          <div class="logo-card" id="thumbnail">		
-            <h2><a class="nav-link" href="#"> ToDo..</a></h2>       
-            <!-- 
-              <img class="smaller-image thick-green-border" src="images/bootstrap.png" alt="A cute orange cat lying on its back.">
-              <img class="smaller-image thick-green-border" src="images/html5.png" alt="html5">
-              <img class="smaller-image" src="images/css3-flexbox.png" alt="css3 flexbox">
-              -->               
-          </div>             
+        <div class="col-sm-4 col-mb-6 pb-2"> 
+          <div class="card" id="thumbnail">		
+            <h3><a class="nav-link" href="#"> Next ToDo..</a></h3>                               
+          </div>                       
         </div>
-      </div>
 
-    </div>    
+        
+        
+      </div>      
+    </div>   
+
     <div class="footer">
       <div class="foot-text">
         2022 @ascii274 exercises.
