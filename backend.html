@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/japan.css">
+    <!-- <link href="./css/index-responsive.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <title>Home</title>
+
+    <style>	
+
+      .html-elements{			
+        color: blue;
+        font-size: 16px;
+        /* google font: Cairo */						
+        font-family: Cairo, monospace; 
+        text-align: justify;
+        border-width: 1px;			
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;			
+        width: 500px;
+        border-radius: 5px;
+      }
+      
+      .smaller-image{
+        width: 80px;		
+      }
+      
+      .index-image{        
+        width: 260px;		
+        height: 138px;        
+      }
+
+      .thick-green-border{
+        border-color: white;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+      
+      .card {
+        border: 0;
+        border-radius: 0;
+        color: #fff;
+        height:100%;
+        object-fit:cover; /* contain or cover */
+        box-shadow: 5px 5px 10px #e1e1e1;
+        padding: 2em 0;
+        border-bottom-right-radius: 4em;
+        border-top-left-radius: 4em;
+        /* background: linear-gradient(to left, teal 50%, #26282b 50%); */
+        /* background-size: 200%; */
+        /* background-position: right; */
+        transition: background-position 0.5s ease-out;
+      }
+           
+      #thumbnail{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+
+    </style>
+
+  </head>
+  <body class="p-3 mt-4 border-0 ">
+
+    <!-- menu -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container">        
+        <p class="card-text fs-6 fw-light text-body">Joel Cabatay <br> Fullstack Developer Junior</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <small class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 13/09/2022</small>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./fontend.html">Fontend</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./backend.html">Backend</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- presentation -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center fs-1 font-monospace text-muted">Backend</p>
+        </div>        
+      </div>
+    </div>
+    
+    <div class="container-md mt-2">
+      <div class="row">    
+        <div class="col-sm-6 col-md-4 pb-2"> 
+          <div class="card bg-success text-white" id="thumbnail">		
+            <div class="card-title">
+              <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#"> HelloWorld </a></p>
+              <!--<img class="rounded mx-auto" src="images/japan-index-300x138.png" alt="backend.">-->
+            </div>        
+
+            <div class="card-body">
+              <p class="card-title text-white">Description</p>
+              <p class="card-text fs-6 fw-light text-body">
+                In this project it's only an introduction that tecnologies to know how are they functionalities.
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card-title text-white">Skills</p>
+              <table class="table-sm table-borderless fw-light text-body">
+                <tr>
+                  <td>Docker</td>
+                  <td>Java</td>
+                </tr>
+                <tr>
+                  <td>JDK8</td>
+                  <td>Maven</td>
+                </tr>
+                <tr>
+                  <td>RESTful</td>
+                  <td>SOLID Principles</td>
+                  
+                </tr>
+                <tr>                  
+                  <td>Sonarqube</td>
+                  <td>Testing</td>
+                </tr>
+              </table>
+            </div>  
+
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/HelloWorld" class="card-link text-white">See code</a></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 pb-2">  
+          <div class="card bg-primary" id="thumbnail">		
+            <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> JoBarcelona-2022</a></p>  
+            <!--<img class="rounded mx-auto" src="images/japan-cards-300x138.png" alt="Frontend exercises.">-->
+          
+            <div class="card-body">
+              <p class="card-title text-white">Description</p>
+              <p class="card-text fs-6 fw-light text-body">
+                Working with persistence in MongoDB.<br>
+                 - Login <br>   
+                 - Signup with token, controlling size format of password<br>
+                 - Listing users<br>
+                 - Connecting to other port.                
+              </p>
+              <div>                              
+                <p class="card-title text-white">Skills</p>
+                <table class="table-sm table-borderless fw-light text-body">
+                  <tr>
+                    <td>Java</td>
+                    <td>JDK15</td>
+                  </tr>
+                  <tr>
+                    <td>JSON</td>
+                    <td>JWT</td>
+                  </tr>
+                  <tr>                    
+                    <td>MongoRepository</td>
+                    <td>MongoDB</td>
+                  </tr>
+                  <tr>                    
+                    <td>RESTful</td>
+                    <td>Sonarqube</td>
+                  </tr>
+                </table>              
+              </div>
+            </div> 
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/jobarcelona-2022" class="card-link text-white">See code</a></small>
+            </div>
+          </div>             
+        </div>
+
+        <div class="col-sm-6 col-md-4 pb-2"> 
+            <div class="card bg-info" id="thumbnail">		
+              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> CSVToJSON</a></p>  
+              
+              <div class="card-body">
+                <p class="card-title text-white">Description</p>
+                <p class="card-text fs-6 fw-light text-body">
+                  Reading a CSV file and show data. We can select what rows we want to show.
+                </p>
+                <div>              
+                  <p class="card-title text-white"> Skills</p>
+                  <table class="table-sm table-borderless fw-light text-body">
+                    <tr>
+                      <td>CSV</td>
+                      <td>Java</td>
+                    </tr>
+                    <tr>
+                      <td>JSON</td>
+                      <td>JDK17</td>
+                    </tr>
+                    <tr>                    
+                      <td>Postman</td>
+                      <td>RESTful</td>
+                    </tr>
+                    <tr>                    
+                      <td>Sonarqube</td>
+                      <td>Testing Mockito</td>
+                    </tr>
+                  </table>             
+                </div>
+              </div> 
+              <div class="card-footer">
+                <small class="text-muted"><a href="https://github.com/jcabatay/NuweChallenges/tree/develop/CSVToJson" class="card-link text-white">See code</a></small>
+              </div>
+            </div>             
+        </div>
+        <!-- BusinessAssistantBCN-->
+        <div class="container-md mt-2">
+            <div class="row">    
+              <div class="col-sm-6 col-md-4 pb-2"> 
+                <div class="card bg-info text-white" id="thumbnail">		
+                  <div class="card-title">
+                    <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#">BusinessAssistant </a></p>
+                  </div>                     
+                  <div class="card-body">
+                    <p class="card-title text-white">Description</p>
+                    <p class="card-text fs-6 fw-light text-body">
+                        This is my first project what i work with colleagues of Backend and Frontend in Bootcamp ItAcademy.
+                        Below in skills i put all that what i collaborate.
+                      </p>
+                    <p class="card-title text-white">Skills</p>
+                       <table class="table-sm table-borderless fw-light text-body">
+                    <tr>
+                      <td>Java</td>
+                      <td>JDK17</td>
+                    </tr>
+                    <tr>
+                      <td>JSON</td>
+                      <td>Postman</td>
+                    </tr>
+                    <tr>                    
+                      <td>RESTful</td>
+                      <td>Testing Mockito</td>
+                    </tr>
+                    
+                  </table> 
+                
+                  </div>  
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="https://github.com/jcabatay/BusinessAssistantBCN-backend" class="card-link text-white">See code</a></small>
+                  </div>
+                </div>
+              </div>
+              
+    <div class="footer">
+      <div class="foot-text">
+        2022 @ascii274 exercises.
+      </div>
+    </div>
+  </body>
+</html>

@@ -47,8 +47,8 @@
         border: 0;
         border-radius: 0;
         color: #fff;
-        /* height: 55vw;*/
-        object-fit: contain;
+        height: 55vw;
+        object-fit:cover;
         box-shadow: 5px 5px 10px #e1e1e1;
         padding: 2em 0;
         border-bottom-right-radius: 4em;
@@ -64,25 +64,26 @@
       }
 
        /* Small devices (landscape phones, 576px and up) */
-      @media (min-width: 576px) {
+       /* @media (min-width: 576px) {
         .card {
         height: 77vw;
         }
-      }
+      }*/
       
         /* Medium devices (tablets, 768px and up) */
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
       .card {
         height: 44vw;
        }
-      }
+      }*/
   
         /* Large devices (desktops, 992px and up) */
-      @media (min-width: 992px) {
+        
+      /* @media (min-width: 992px) {
         .card {
         height: 55vw;
         }
-      }
+      }*/
 
     </style>
 
@@ -127,8 +128,13 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Backend
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Under construction</a></li>
+                <ul class="dropdown-menu" type="1">
+                  <li><a class="dropdown-item" href="#">DutyFree</a></li>
+                  <li><a class="dropdown-item" href="#">HelloWorld</a></li>
+                  <li><a class="dropdown-item" href="#">JoBarcelona-2022</a></li>
+                  <li><a class="dropdown-item" href="#">NuweChallenges</a></li>
+                  <li><a class="dropdown-item" href="#">Reviews</a></li>
+                  
                 </ul>
 
               </li>
@@ -161,53 +167,47 @@
     <div class="container mt-2">
       <div class="row">    
 
-        <div class="col-sm-4 col-mb-6 pb-2"> 
+        <div class="col-sm-4 pb-2"> 
           <div class="card" id="thumbnail">		
-            <h3><a class="nav-link" href="./japan.html"> Japan </a></h3>                  
+            <div class="card-title">
+              <!-- <h3><a class="nav-link" href="./japan.html"> Japan </a></h3>-->
+              <p class="card-title text-primary fs-3"><a class="nav-link" href="./japan.html"> Japan </a></p>
               <img class="card-img-top rounded mx-auto" src="images/japan-index-300x138.png" alt="Frontend exercises.">
-          
+            </div>                     
             <div class="card-body">
-              <h6 class="card-title text-primary">Description</h6>
-              <p class="card-text fs-7 fw-ligt text-body">My first exercise during my introduction to Bootstrap</p>
-              <h6 class="card-title text-primary">Skills</h6>              
-              <p class="card-text fs-7 fw-ligt text-body">Bootstrap - Flexbox - Html5 </p>
-                <!-- 
-                <ul class="list-group list-group-flush">              
-                  <li class="list-group-item"><h6>Bootstrap</h6></li>            
-                  <li class="list-group-item"><h6>Flexbox</h6></li>            
-                  <li class="list-group-item"><h6>Html5</h6></li>                          
-                </ul>
-                -->
-                <!--
-                <p class="text-muted">
-                  <a href="#" class="card-link text-reset">See code</a>            
-                </p>
-              -->
-            </div>
+              <p class="card-title text-primary">Description</p>
+              <p class="card-text fs-6 fw-light text-body">This is my first exercise during my introduction to Bootstrap. A Japan tour guide</p>
+              <!-- <h6 class="card-title text-primary">Skills</h6>   -->              
+              <div>              
+                <p class="card-title text-primary"> Skills</p>
+                <p class="list-group-item list-group-item-light fs-6 fw-light">
+                  Bootstrap <br> Flexbox <br> Html5
+                </p>                
+              </div>
+
+            </div>  
             <div class="card-footer">
               <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-reset">See code</a></small>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-4 col-mb-6 pb-2"> 
+        <div class="col-sm-4  pb-2"> 
           <div class="card" id="thumbnail">		
-            <h3><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></h3>                      
+            <p class="card-title text-primary fs-3"><a class="nav-link" href="./japan-cards.html"> Japan Cards</a></p>  
             <img class="card-img-top rounded mx-auto" src="images/japan-cards-300x138.png" alt="Frontend exercises.">
-
             <div class="card-body">
-              <h6 class="card-title text-primary">Description</h6>
-              <p class="card-text fs-7 fw-ligt text-body">Keep on working with cards. Following a tutorial in youtube.</p>
-              <h6 class="card-title text-primary">Skills</h6>
-              <p class="card-text fs-7 fw-ligt text-body">Bootstrap - Flexbox - Html5 - Sass</p>
-              <!-- 
-                <ul class="list-group list-group-flush">              
-                  <li class="list-group-item"><h6>Bootstrap</h6></li>            
-                  <li class="list-group-item"><h6>Flexbox</h6></li>            
-                  <li class="list-group-item"><h6>Html5</h6></li>                          
-                  <li class="list-group-item"><h6>Sass</h6></li>                          
-                </ul>                
-                -->
+              <p class="card-title text-primary">Description</p>
+              <p class="card-text fs-6 fw-light text-body">
+                Keep on working with cards. Following a tutorial in youtube. Here i continuing working with Cards and Responsive.
+              
+              </p>
+              <div>              
+                <p class="card-title text-primary"> Skills</p>
+                <p class="list-group-item list-group-item-light fs-6 fw-light">
+                  Bootstrap - Sass <br> Flexbox <br> Html5
+                </p>                
+              </div>
             </div> 
             <div class="card-footer">
               <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-reset">See code</a></small>
@@ -216,7 +216,7 @@
           </div>             
         </div>
 
-        <div class="col-sm-4 col-mb-6 pb-2"> 
+        <div class="col-sm-4 pb-2"> 
           <div class="card" id="thumbnail">		
             <h3><a class="nav-link" href="#"> Next ToDo..</a></h3>                               
           </div>                       
