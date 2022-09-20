@@ -58,7 +58,15 @@
         /* background-position: right; */
         transition: background-position 0.5s ease-out;
       }
-           
+      
+      .text-underline-hover {
+        text-decoration: none;
+      }
+      
+      .text-underline-hover:hover {
+        text-decoration: underline;
+      }
+
       #thumbnail{
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
@@ -71,13 +79,13 @@
     <!-- menu -->
     <nav class="navbar bg-light fixed-top">
       <div class="container">        
-        <p class="card-text fs-6 fw-light text-body">Joel Cabatay <br> Fullstack Developer Junior</p>
+        <p class="card-text fs-6 fw-light text-body text-muted">Joel Cabatay <br> Fullstack Developer Junior</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <small class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 13/09/2022</small>
+            <small class="offcanvas-title text-muted fw-light text-body" id="offcanvasNavbarLabel">Updated: 20/09/2022</small>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -111,13 +119,13 @@
     </div>
     
     <div class="container mt-5">
-    
+          
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
-        <div class="col">
+        <div class="col-md-6 col-lg-4 pb-2"> 
           <div class="card h-100 text-black bg-success">            
             <div class="card-body">
-              <p class="card-title text-primary fs-3"><a class="nav-link text-white" href="#"> HelloWorld </a></p>
+              <p class="card-title text-primary fs-3"><a class="text-white text-underline-hover" href="#">HelloWorld </a></p>
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 In this project it's only an introduction that tecnologies to know how are they functionalities.
@@ -145,16 +153,16 @@
               </table>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/HelloWorld" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/HelloWorld" class="card-link text-white text-underline-hover" target="_blank" rel="noopener noreferrer">See code [+]</a></small>
             </div>
           </div>
         </div>
 
         <!-- jobarcelona -->
-        <div class="col">
+        <div class="col-md-6 col-lg-4 pb-2"> 
           <div class="card bg-primary h-100 text-white">
             <div class="card-body">
-              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> JoBarcelona-2022</a></p>  
+              <p class="card-title text-primary fs-3"><a class="text-white text-underline-hover" href="#">JoBarcelona-2022</a></p>  
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 Working with persistence in MongoDB.<br>
@@ -186,16 +194,16 @@
               </table>               
             </div>
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/jobarcelona-2022" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/jobarcelona-2022" class="card-link text-white text-underline-hover" target="_blank" rel="noopener noreferrer">See code [+]</a></small>
             </div>
           </div>
         </div>
 
         <!-- csvtojson -->
-        <div class="col">
+        <div class="col-md-6 col-lg-4 pb-2"> 
           <div class="card bg-info h-100 text-white">
             <div class="card-body">
-              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#">CSVToJSON</a></p>  
+              <p class="card-title text-primary fs-3"><a class="text-white text-underline-hover" href="#">CSVToJSON</a></p>  
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 Reading a CSV file and show data. We can select what rows we want to show.
@@ -223,25 +231,25 @@
               </table>               
             </div>
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/NuweChallenges/tree/develop/CSVToJson" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/NuweChallenges/tree/develop/CSVToJson" class="card-link text-white text-underline-hover" target="_blank" rel="noopener noreferrer">See code [+]</a></small>
             </div>
           </div>
         </div>
 
         <!-- businessAssistantBCN -->
-        <div class="col">
+        <div class="col-md-6 col-lg-4 pb-2"> 
           <div class="card bg-info h-100 text-white">
             <div class="card-body">
-              <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#">BusinessAssistant </a></p>
+              <p class="card-title text-primary fs-3"><a class="text-white text-underline-hover" href="#">BusinessAssistant </a></p>
               <p class="card-title text-white">Description</p>
-                <p class="card-text fs-6 fw-light text-body">
-                  This is my first project what i work with colleagues of Backend and Frontend in Bootcamp ItAcademy.
-                  Below in skills i put all that what i collaborate.
-                  - Creation new functionalities<br>                  
-                  - Refactorization data<br>
-                  - Spring Reactive<br>                  
-                  - Testing.<br>
-                </p>
+              <p class="card-text fs-6 fw-light text-body">
+                This is my first project what i work with colleagues of Backend and Frontend in Bootcamp ItAcademy.
+                Below in skills i put all that what i collaborate.<br>
+                - Creation new functionalities<br>                  
+                - Refactorization data<br>
+                - Spring Reactive<br>                  
+                - Testing.<br>
+              </p>               
             </div>
             <div class="card-footer">
               <p class="card-text">Skills</p>
@@ -257,15 +265,20 @@
                 <tr>                    
                   <td>RESTful</td>
                   <td>Testing Mockito</td>
-                </tr>                    
+                </tr>
+                <tr>                    
+                  <td>Sonarqube</td>
+                  <td>&nbsp;</td>                  
+                </tr>
               </table>               
             </div>
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/BusinessAssistantBCN-backend" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/BusinessAssistantBCN-backend" class="card-link text-white text-underline-hover" target="_blank" rel="noopener noreferrer">See code [+]</a></small>
             </div>
           </div>
         </div>
 
+        
       </div>
     </div>
 </body>

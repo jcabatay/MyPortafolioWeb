@@ -59,6 +59,14 @@
         /* background-position: right; */
         transition: background-position 0.5s ease-out;
       }
+
+      .text-underline-hover {
+        text-decoration: none;
+      }
+
+      .text-underline-hover:hover {
+        text-decoration: underline;
+      }
            
       #thumbnail{
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -72,13 +80,14 @@
     <!-- menu -->
     <nav class="navbar bg-light fixed-top">
       <div class="container">        
-        <p class="card-text fs-6 fw-light text-body">Joel Cabatay <br> Fullstack Developer Junior</p>
+        
+        <p class="card-text fs-6 fw-light text-body text-muted">Joel Cabatay <br> Fullstack Developer Junior</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h12 class="offcanvas-title" id="offcanvasNavbarLabel">Updated: 13/09/2022</h12>
+            <small class="offcanvas-title text-muted fw-light text-body" id="offcanvasNavbarLabel">Updated: 20/09/2022</small>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -111,69 +120,86 @@
       </div>
     </div>
     
-    <div class="container-md mt-2">
-      <div class="row">    
-        <div class="col-sm-6 col-md-4 pb-2"> 
-          <div class="card bg-success" id="thumbnail">		
-            <div class="card-title">
-              <!-- <h3><a class="nav-link" href="./japan.html"> Japan </a></h3>-->
-              <p class="card-title fs-3"><a class="nav-link text-white" href="./japan.html"> Japan </a></p>
-              
-            </div>                     
-            <div class="card-body">
-              <p class="card-title text-white">Description</p>
-              <p class="card-text fs-6 fw-light text-body">This is my first exercise during my introduction to Bootstrap. A Japan tour guide</p>
-              <!-- <h6 class="card-title text-primary">Skills</h6>   -->              
-              <div>              
-                <p class="card-title text-white"> Skills</p>
-                <p class="card-text fs-6 fw-light text-body">
-                  Bootstrap <br>
-                  CSS<br>
-                  Flexbox <br>
-                  Html5
-                </p>                
-              </div>
+    <div class="container mt-2">
 
-            </div>  
+      <div class="row row-cols-1 row-cols-md-3 g-4">   
+        <!--Japan --> 
+        <div class="col-md-6 col-lg-4 pb-2"> 
+          <div class="card h-100 text-black bg-success" id="thumbnail">		
+            <div class="card-body">
+              <p class="card-title text-primary fs-3"><a class="text-white text-underline-hover" href="./japan.html">Japan</a></p>
+              <p class="card-title text-white">Description</p>
+              <p class="card-text fs-6 fw-light text-body">
+                This is my first exercise during my introduction to Bootstrap. A Japan tour guide
+              </p>
+            </div>
+            <div class="card-footer text-white">      
+                <p class="card-title text-white"> Skills</p>                  
+                <table class="table-sm table-borderless fw-light text-body">
+                  <tr>
+                    <td>Bootstrap</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>Flexbox</td>
+                    <td>Html5</td>
+                  </tr>
+                </table>
+            </div>             
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-white">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="text-white text-underline-hover">See code [+]</a></small>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 pb-2">
-          <div class="card bg-primary" id="thumbnail">		
-            <p class="card-title text-white fs-3"><a class="nav-link text-white" href="./japan-cards.html"> Japan Cards</a></p>  
-            
+        <!-- japan cards -->
+        <div class="col-md-6 col-lg-4 pb-2"> 
+          <div class="card h-100 text-black bg-primary" id="thumbnail">		
             <div class="card-body">
+              <p class="card-title fs-3"><a class="text-white text-underline-hover" href="./japan-cards.html"> Japan Cards</a></p>  
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 Keep on working with Cards and Responsive. Following a tutorial in youtube.
-              
               </p>
-              <div>              
-                <p class="card-title text-white"> Skills</p>
-                <p class="card-text fs-6 fw-light text-body">
-                  Bootstrap - Sass <br> 
-                  CSS<br>
-                  Flexbox <br> 
-                  Html5
-                </p>                
-              </div>
-            </div> 
-            <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="card-link text-white">See code</a></small>
             </div>
-              
-          </div>             
+            <div class="card-footer text-white">      
+                <p class="card-title text-white"> Skills</p>                  
+                <table class="table-sm table-borderless fw-light text-body">
+                  <tr>
+                    <td>Bootstrap</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>Flexbox</td>
+                    <td>Html5</td>
+                  </tr>
+                </table>
+            </div>             
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/MyPortafolioWeb" class="text-white text-underline-hover">See code [+]</a></small>
+            </div>
+          </div>
+        </div>
+        
+        <!-- japan cards -->
+        <div class="col-md-6 col-lg-4 pb-2"> 
+          <div class="card h-100 text-black bg-warning" id="thumbnail">		
+            <div class="card-body">
+              <p class="card-title fs-3"><a class="text-white text-underline-hover" href="#">Coming soon..</a></p>                
+              <p class="card-text fs-6 fw-light text-body">                
+              </p>
+            </div>   
+            
+            
+          <div class="card-footer">
+            <small class="text-muted"><a href="#" class="text-white text-underline-hover">See code [+]</a></small>
+            
+          </div>
+            
+          </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 pb-2">
-          <div class="card bg-info" id="thumbnail">		
-            <h3><a class="nav-link text-white" href="#"> Coming soon..</a></h3>                               
-          </div>                       
-        </div>
-     
+        
       </div>      
     </div>   
 
