@@ -110,26 +110,21 @@
       </div>
     </div>
     
-    <div class="container-md mt-2">
+    <div class="container mt-5">
+    
+      <div class="row row-cols-1 row-cols-md-3 g-4">
 
-      <div class="row">    
-        <div class="col-sm-6 col-md-4 pb-2"> 
-
-          <div class="card bg-success text-white" id="thumbnail">		            
-            <div class="card-title">
-              <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#"> HelloWorld </a></p>
-              <!--<img class="rounded mx-auto" src="images/japan-index-300x138.png" alt="backend.">-->
-            </div>        
-
+        <div class="col">
+          <div class="card h-100 text-black bg-success">            
             <div class="card-body">
+              <p class="card-title text-primary fs-3"><a class="nav-link text-white" href="#"> HelloWorld </a></p>
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 In this project it's only an introduction that tecnologies to know how are they functionalities.
-              </p>
+              </p>            
             </div>
-
-            <div class="card-body">
-              <p class="card-title text-white">Skills</p>
+            <div class="card-footer text-white">
+              <p class="card-text">Skills</p>
               <table class="table-sm table-borderless fw-light text-body">
                 <tr>
                   <td>Docker</td>
@@ -141,28 +136,25 @@
                 </tr>
                 <tr>
                   <td>RESTful</td>
-                  <td>SOLID Principles</td>
-                  
+                  <td>SOLID Principles</td>                  
                 </tr>
                 <tr>                  
                   <td>Sonarqube</td>
                   <td>Testing</td>
                 </tr>
               </table>
-            </div>  
-
+            </div>
             <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/HelloWorld" class="card-link text-white">See code</a></small>
+              <small class="text-muted"><a href="https://github.com/jcabatay/HelloWorld" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 pb-2">  
-          <div class="card bg-primary" id="thumbnail">		
-            <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> JoBarcelona-2022</a></p>  
-            <!--<img class="rounded mx-auto" src="images/japan-cards-300x138.png" alt="Frontend exercises.">-->
-          
+        <!-- jobarcelona -->
+        <div class="col">
+          <div class="card bg-primary h-100 text-white">
             <div class="card-body">
+              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> JoBarcelona-2022</a></p>  
               <p class="card-title text-white">Description</p>
               <p class="card-text fs-6 fw-light text-body">
                 Working with persistence in MongoDB.<br>
@@ -170,82 +162,78 @@
                  - Signup with token, controlling size format of password<br>
                  - Listing users<br>
                  - Connecting to other port.                
-              </p>
-              <div>                              
-                <p class="card-title text-white">Skills</p>
-                <table class="table-sm table-borderless fw-light text-body">
-                  <tr>
-                    <td>Java</td>
-                    <td>JDK15</td>
-                  </tr>
-                  <tr>
-                    <td>JSON</td>
-                    <td>JWT</td>
-                  </tr>
-                  <tr>                    
-                    <td>MongoRepository</td>
-                    <td>MongoDB</td>
-                  </tr>
-                  <tr>                    
-                    <td>RESTful</td>
-                    <td>Sonarqube</td>
-                  </tr>
-                </table>              
-              </div>
-            </div> 
-            <div class="card-footer">
-              <small class="text-muted"><a href="https://github.com/jcabatay/jobarcelona-2022" class="card-link text-white">See code</a></small>
+              </p>                 
             </div>
-          </div>             
+            <div class="card-footer">
+              <p class="card-text">Skills</p>
+              <table class="table-sm table-borderless fw-light text-body">
+                <tr>
+                  <td>Java</td>
+                  <td>JDK15</td>
+                </tr>
+                <tr>
+                  <td>JSON</td>
+                  <td>JWT</td>
+                </tr>
+                <tr>                    
+                  <td>MongoRepository</td>
+                  <td>MongoDB</td>
+                </tr>
+                <tr>                    
+                  <td>RESTful</td>
+                  <td>Sonarqube</td>
+                </tr>
+              </table>               
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/jobarcelona-2022" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 pb-2"> 
-            <div class="card bg-info" id="thumbnail">		
-              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#"> CSVToJSON</a></p>  
-              
-              <div class="card-body">
-                <p class="card-title text-white">Description</p>
-                <p class="card-text fs-6 fw-light text-body">
-                  Reading a CSV file and show data. We can select what rows we want to show.
-                </p>
-                <div>              
-                  <p class="card-title text-white"> Skills</p>
-                  <table class="table-sm table-borderless fw-light text-body">
-                    <tr>
-                      <td>CSV</td>
-                      <td>Java</td>
-                    </tr>
-                    <tr>
-                      <td>JSON</td>
-                      <td>JDK17</td>
-                    </tr>
-                    <tr>                    
-                      <td>Postman</td>
-                      <td>RESTful</td>
-                    </tr>
-                    <tr>                    
-                      <td>Sonarqube</td>
-                      <td>Testing Mockito</td>
-                    </tr>
-                  </table>             
-                </div>
-              </div> 
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/jcabatay/NuweChallenges/tree/develop/CSVToJson" class="card-link text-white">See code</a></small>
-              </div>
-            </div>             
+        <!-- csvtojson -->
+        <div class="col">
+          <div class="card bg-info h-100 text-white">
+            <div class="card-body">
+              <p class="card-title text-white fs-3"><a class="nav-link text-white" href="#">CSVToJSON</a></p>  
+              <p class="card-title text-white">Description</p>
+              <p class="card-text fs-6 fw-light text-body">
+                Reading a CSV file and show data. We can select what rows we want to show.
+              </p>                 
+            </div>
+            <div class="card-footer">
+              <p class="card-text">Skills</p>
+              <table class="table-sm table-borderless fw-light text-body">
+                <tr>
+                  <td>CSV</td>
+                  <td>Java</td>
+                </tr>
+                <tr>
+                  <td>JSON</td>
+                  <td>JDK17</td>
+                </tr>
+                <tr>                    
+                  <td>Postman</td>
+                  <td>RESTful</td>
+                </tr>
+                <tr>                    
+                  <td>Sonarqube</td>
+                  <td>Testing: Mockito</td>                  
+                </tr>
+              </table>               
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/NuweChallenges/tree/develop/CSVToJson" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- BusinessAssistantBCN another row-->
-      <div class="row">            
-        <div class="container-md mt-2">              
-          <div class="col-sm-6 col-md-4 pb-2"> 
-            <div class="card bg-info text-white" id="thumbnail">		
-              <div class="card-title">
-                <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#">BusinessAssistant </a></p>
-              </div>                     
-              <div class="card-body">
-                <p class="card-title text-white">Description</p>
+
+        <!-- businessAssistantBCN -->
+        <div class="col">
+          <div class="card bg-info h-100 text-white">
+            <div class="card-body">
+              <p class="card-title text-primary fs-3" ><a class="nav-link text-white" href="#">BusinessAssistant </a></p>
+              <p class="card-title text-white">Description</p>
                 <p class="card-text fs-6 fw-light text-body">
                   This is my first project what i work with colleagues of Backend and Frontend in Bootcamp ItAcademy.
                   Below in skills i put all that what i collaborate.
@@ -254,38 +242,31 @@
                   - Spring Reactive<br>                  
                   - Testing.<br>
                 </p>
-                <p class="card-title text-white">
-                  Skills
-                </p>
-                <table class="table-sm table-borderless fw-light text-body">
-                  <tr>
-                    <td>Java</td>
-                    <td>JDK17</td>
-                  </tr>
-                  <tr>
-                    <td>JSON</td>
-                    <td>Postman</td>
-                  </tr>
-                  <tr>                    
-                    <td>RESTful</td>
-                    <td>Testing Mockito</td>
-                  </tr>                    
-                </table> 
-              </div>  
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/jcabatay/BusinessAssistantBCN-backend" class="card-link text-white">See code</a></small>
-              </div>
+            </div>
+            <div class="card-footer">
+              <p class="card-text">Skills</p>
+              <table class="table-sm table-borderless fw-light text-body">
+                <tr>
+                  <td>Java</td>
+                  <td>JDK17</td>
+                </tr>
+                <tr>
+                  <td>JSON</td>
+                  <td>Postman</td>
+                </tr>
+                <tr>                    
+                  <td>RESTful</td>
+                  <td>Testing Mockito</td>
+                </tr>                    
+              </table>               
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/jcabatay/BusinessAssistantBCN-backend" class="card-link text-white" target="_blank" rel="noopener noreferrer">See code</a></small>
             </div>
           </div>
         </div>
-        <!-- footer -->
-        <div class="row">            
-          <div class="container-md mt-2">  
-          
-              <div class="foot-text">
-                2022 @ascii274 exercises.
-              </div>
-          </div>
-        </div>
-  </body>
+
+      </div>
+    </div>
+</body>
 </html>
